@@ -505,6 +505,18 @@ e.g. "stm32f769xx.h" or "stm32f429xx.h"*/
 /*Enable the examples to be built with the library*/
 #define LV_BUILD_EXAMPLES   1
 
+/*==================
+* File System
+*==================*/
+/*File system interface*/
+#define LV_USE_FS_IF	1
+#if LV_USE_FS_IF
+#  define LV_FS_IF_FATFS    '\0'
+#  define LV_FS_IF_PC       '\0'
+#  define LV_FS_IF_POSIX    'S'
+#endif  /*LV_USE_FS_IF*/
+
+
 /*--END OF LV_CONF_H--*/
 
 #endif /*LV_CONF_H*/

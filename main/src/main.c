@@ -20,6 +20,8 @@
 #include "lv_drivers/indev/keyboard.h"
 #include "lv_drivers/indev/mousewheel.h"
 
+#include "lv_fs_if.h"
+
 /*********************
  *      DEFINES
  *********************/
@@ -74,6 +76,9 @@ int main(int argc, char **argv)
   /*Initialize LVGL*/
   lv_init();
 
+  /*Initialize LVGL File System*/
+  lv_fs_if_init();
+
   /*Initialize the HAL (display, input devices, tick) for LVGL*/
   hal_init();
 
@@ -93,9 +98,9 @@ int main(int argc, char **argv)
 //  lv_example_tabview_1();
 //  lv_example_tabview_1();
 //  lv_example_flex_3();
-//  lv_example_label_1();
+ lv_example_label_1();
 
-  lv_demo_widgets();
+  // lv_demo_widgets();
 //  lv_demo_keypad_encoder();
 //  lv_demo_benchmark();
 //  lv_demo_stress();

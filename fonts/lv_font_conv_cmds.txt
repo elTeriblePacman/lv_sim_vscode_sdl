@@ -1,0 +1,22 @@
+Montserrat
+With compression
+env DEBUG=* lv_font_conv --font Montserrat-Medium.ttf -r 0x20-0x7F --size 16 --format bin --bpp 4 -o Montserrat_16_compressed.bin
+
+Without compression
+env DEBUG=* lv_font_conv --no-compress --font Montserrat-Medium.ttf -r 0x20-0x7F --size 16 --format bin --bpp 4 -o Montserrat_16_notcompressed.bin
+
+
+Bauhaus
+With compression
+env DEBUG=* lv_font_conv --font BAUHS93.TTF -r 0x20-0x7F --size 16 --format bin --bpp 4 -o bauhaus_16_compressed.bin
+
+Without compression
+env DEBUG=* lv_font_conv --no-compress --font BAUHS93.TTF -r 0x20-0x7F --size 16 --format bin --bpp 4 -o bauhaus_16_notcompressed.bin
+
+
+Ravie
+With compression
+env DEBUG=* lv_font_conv --font RAVIE.TTF -r 0x20-0x7F --size 16 --format bin --bpp 4 -o ravie_16_compressed.bin
+
+Without compression
+env DEBUG=* lv_font_conv --no-compress --font RAVIE.TTF -r 0x20-0x7F --size 16 --format bin --bpp 4 -o ravie_16_notcompressed.bin
