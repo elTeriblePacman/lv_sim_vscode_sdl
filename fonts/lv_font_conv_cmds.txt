@@ -13,6 +13,12 @@ env DEBUG=* lv_font_conv --font BAUHS93.TTF -r 0x20-0x7F --size 16 --format bin 
 Without compression
 env DEBUG=* lv_font_conv --no-compress --font BAUHS93.TTF -r 0x20-0x7F --size 16 --format bin --bpp 4 -o bauhaus_16_notcompressed.bin
 
+With compression, C array
+env DEBUG=* lv_font_conv --font BAUHS93.TTF -r 0x20-0x7F --size 16 --format lvgl --bpp 4 -o bauhaus_16_compressed_array.c
+
+Without compression,  C array
+env DEBUG=* lv_font_conv --no-compress --font BAUHS93.TTF -r 0x20-0x7F --size 16 --format lvgl --bpp 4 -o bauhaus_16_notcompressed_array.c
+
 
 Ravie
 With compression
